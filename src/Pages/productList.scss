@@ -1,0 +1,17 @@
+.product {
+  width: 90%;
+  margin: 0 auto;
+
+  .product-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+
+    .product-item {
+      width: 33%;
+
+    }
+  }
+}
