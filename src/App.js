@@ -4,6 +4,7 @@ import { Provider } from "react-redux";
 import { store } from "./Redux/store";
 import ProductList from "./Pages/productList";
 import Posts from "./Pages/posts";
+import BookList from "./Pages/bookList";
 import "./styles.css";
 
 export default function App() {
@@ -24,7 +25,11 @@ export default function App() {
             <Posts />
           </Route>
         </Switch>
-        <Switch></Switch>
+        <Switch>
+          <Route path="/books">
+            <BookList />
+          </Route>
+        </Switch>
       </BrowserRouter>
     </Provider>
   );

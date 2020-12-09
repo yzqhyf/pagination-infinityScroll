@@ -15,7 +15,7 @@ const Posts = (props) => {
           "https://jsonplaceholder.typicode.com/posts"
         );
         setPosts(response.data);
-        console.log(response);
+        // console.log(response);
       } catch (err) {
         setError(err);
       }
