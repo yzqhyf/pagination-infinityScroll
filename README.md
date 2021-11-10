@@ -676,7 +676,7 @@ webstorage
 sessionstorage和loaclstorage
 存储在客户端，不与服务器端进行交互，大小为5mb
 localstorage的生命周期是永久的，除非主动删除。
-sessionstorage的生命周期仅在当前浏览器窗口会话下有效，在同源窗口下（即浏览器窗口没有关闭，刷新页面，通过new tab链接进入同源的另一个页面）都存在。使用window.open()，若使用<a href='' target="'_blank'">则sessionstorage不同。
+sessionstorage的生命周期仅在当前浏览器窗口会话下有效，在同源窗口下（即浏览器窗口没有关闭，刷新页面，通过new tab链接进入同源的另一个页面）都存在。使用window.open()，若使用"<a href='' target='_blank'>"则sessionstorage不同。
 但是在new tab使用浏览器地址栏打开新同源窗口，sessionstorage的数据不一样。
 
 Object.create和new关键字
